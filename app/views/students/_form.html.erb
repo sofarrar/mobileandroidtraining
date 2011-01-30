@@ -12,12 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :online %><br />
-    <%= f.text_field :online %>
-  </div>
-  <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :online %><br />
+    <%= f.check_box :online %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_field :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>

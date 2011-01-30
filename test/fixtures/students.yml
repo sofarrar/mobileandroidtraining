@@ -1,9 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  online: 1
   email: MyString
+  online: false
+  comment: MyString
 
 two:
-  online: 1
   email: MyString
+  online: false
+  comment: MyString

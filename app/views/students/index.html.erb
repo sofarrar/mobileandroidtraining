@@ -2,8 +2,9 @@
 
 <table>
   <tr>
-    <th>Online</th>
     <th>Email</th>
+    <th>Online</th>
+    <th>Comment</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,8 +12,9 @@
 
 <% @students.each do |student| %>
   <tr>
-    <td><%= student.online %></td>
     <td><%= student.email %></td>
+    <td><%= student.online %></td>
+    <td><%= student.comment %></td>
     <td><%= link_to 'Show', student %></td>
     <td><%= link_to 'Edit', edit_student_path(student) %></td>
     <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>

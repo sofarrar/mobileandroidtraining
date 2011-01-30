@@ -1,8 +1,9 @@
 class CreateStudents < ActiveRecord::Migration
   def self.up
     create_table :students do |t|
-      t.integer :online
       t.string :email
+      t.boolean :online
+      t.string :comment
 
       t.timestamps
     end

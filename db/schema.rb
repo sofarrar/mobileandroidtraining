@@ -10,13 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110130015733) do
+ActiveRecord::Schema.define(:version => 20110130022158) do
 
   create_table "students", :force => true do |t|
     t.integer  "online"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "comment"
   end
 
 end

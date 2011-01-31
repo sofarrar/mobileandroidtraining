@@ -1,5 +1,16 @@
 Mobileandroidtraining::Application.routes.draw do
-  resources :students
+
+	get "students/new"
+
+	match '/signup', :to => 'students#new'
+	
+	match '/instructors', :to => 'pages#instructors'
+	match '/courses', :to => 'pages#courses'
+  
+
+	root :to => 'pages#home'
+	
+	resources :students
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

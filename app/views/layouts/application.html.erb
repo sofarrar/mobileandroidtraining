@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>Mobileandroidtraining</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
-</head>
-<body>
+  <%= render 'layouts/stylesheets' %>
+ </head>
+ <body>
+    <div class="container">
 
-<%= yield %>
-
-</body>
+  		<%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+	 <%= render 'layouts/footer'%>
+    </div>
+  </body>
 </html>

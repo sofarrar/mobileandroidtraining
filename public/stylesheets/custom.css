@@ -1,13 +1,14 @@
 .container {
   width: 710px;
 }
-
+/*  */
 body {
-  background: #A4C639;
+  background:  #35278C;
 }
 
 header {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header img {
@@ -83,6 +84,7 @@ nav ul li a:hover {
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
+	margin-bottom: 20px;
   display: block;
   text-align: center;
   width: 190px;

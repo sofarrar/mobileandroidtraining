@@ -1,14 +1,33 @@
 Mobileandroidtraining::Application.routes.draw do
 
-	get "students/new"
+	#match '/:controller(/:action(/:id))'
+
+	#get "students/new"
+
+	#match creates named routes, e.g., about_path
 
 	match '/signup', :to => 'students#new'
+
+	#works
+
+	#match '/students' => redirect('/thankyou')
+	match '/students/:id' => redirect('/thankyou')
+	
+
+	
 	
 	match '/instructors', :to => 'pages#instructors'
 	match '/courses', :to => 'pages#courses'
-  
-
+ 
+	match '/thankyou', :to => 'pages#thankyou'
+ 
+	#the matching below creates:
+	#root_path => '/'
+	#root_url  => 'http://localhost:3000/'
+	#
 	root :to => 'pages#home'
+
+	#match '/students', :to => 'pages#home'
 	
 	resources :students
 

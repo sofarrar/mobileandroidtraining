@@ -4,9 +4,8 @@ class StudentMailer < ActionMailer::Base
 
  def welcome_email(student)
     @student = student
-    @url  = "http://example.com/login"
     mail(:to => student.email,
-         :subject => "Welcome to My Awesome Site", :from => "farrar@uw.edu")
+         :subject => "Android Certificate Program at the UW", :from => "farrar@uw.edu")
   end
 
 end

@@ -2,7 +2,7 @@ Mobileandroidtraining::Application.routes.draw do
 
 	#match '/:controller(/:action(/:id))'
 
-	#get "students/new"
+	get "students/new"
 
 	#match creates named routes, e.g., about_path
 
@@ -11,7 +11,7 @@ Mobileandroidtraining::Application.routes.draw do
 	#works
 
 	#match '/students' => redirect('/thankyou')
-	match '/students/:id' => redirect('/thankyou')
+	#match 'students/:id' => redirect('/')
 	
 
 	

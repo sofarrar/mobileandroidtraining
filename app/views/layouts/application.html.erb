@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mobileandroidtraining</title>
-  <%= csrf_meta_tag %>
+  <title> <%= @title %></title>
+  
+	<meta name="keywords" content="<%= @meta_keywords %>"/>
+	<meta name="description" content="<%= @meta_keywords %>"/>
+	
+	<%= csrf_meta_tag %>
   <%= render 'layouts/stylesheets' %>
  </head>
  <body>
@@ -18,5 +22,6 @@
 
 	 	<%= render 'layouts/footer'%>
     </div>
-  </body>
+
+   </body>
 </html>

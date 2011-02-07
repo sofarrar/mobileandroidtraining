@@ -45,6 +45,9 @@ class StudentsController < ApplicationController
       if @student.save
         format.html { redirect_to(@student, :notice => 'Your request was successfully recorded.') }
         format.xml  { render :xml => @student, :status => :created, :location => @student }
+		
+		StudentMailer.welcome_email(@student).deliver
+
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @student.errors, :status => :unprocessable_entity }

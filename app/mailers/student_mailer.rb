@@ -1,7 +1,6 @@
 class StudentMailer < ActionMailer::Base
   default :from => "farrar@uw.edu"
 
-
  def welcome_email(student)
     @student = student
     mail(:to => student.email,

@@ -29,7 +29,7 @@ Mobileandroidtraining::Application.routes.draw do
 
 	#match '/students', :to => 'pages#home'
 	
-	resources :students
+	resources :students, :only => [:new, :create, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
